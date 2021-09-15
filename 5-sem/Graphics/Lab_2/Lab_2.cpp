@@ -1,6 +1,10 @@
-﻿#include <GL/glew.h>
-#include <GLFW/glfw3.h>
+﻿//#include <GL/glew.h>
+//#include <GLFW/glfw3.h>
 #include <iostream>
+
+
+#include <glew.h>
+#include <glfw3.h>
 
 #include "GLWindow.h"
 #include "GLRenderSystem.h"
@@ -107,13 +111,13 @@ void resize(GLFWwindow* window, int width, int height) {
 
 int main(int argc, char** argv) {
 
-    Knight3D::GraphCore::GLRenderSystem* renderer = new Knight3D::GraphCore::GLRenderSystem();
+    Knight3D::GraphCore::GLRendererOld2_1* renderer = new Knight3D::GraphCore::GLRendererOld2_1();
 
     renderer->init();
 
 
     Knight3D::GLWindow* Win1 = new Knight3D::GLWindow("Lesson 021", 320, 240);
-    Knight3D::GLWindow* Win2 = new Knight3D::GLWindow("Lesson 022", 640, 480);
+    //Knight3D::GLWindow* Win2 = new Knight3D::GLWindow("Lesson 022", 640, 480);
 
     Cube::init();
 
@@ -128,10 +132,10 @@ int main(int argc, char** argv) {
             glfwSwapBuffers(Win1->getGLFWHandle());
 
 
-        glfwMakeContextCurrent(Win2->getGLFWHandle());
-        renderer->render(Win2->getGLFWHandle());
+        glfwMakeContextCurrent(Win1->getGLFWHandle());
+        renderer->render(Win1->getGLFWHandle());
         
-            glfwSwapBuffers(Win2->getGLFWHandle());
+            glfwSwapBuffers(Win1->getGLFWHandle());
 
 
         glfwPollEvents();
@@ -139,7 +143,7 @@ int main(int argc, char** argv) {
     }
 
 
-    glDeleteBuffers(1, &Cube::VBO);
+    //glDeleteBuffers(1, &Cube::VBO);
 
     glfwDestroyWindow(Win1->getGLFWHandle());
     glfwTerminate();

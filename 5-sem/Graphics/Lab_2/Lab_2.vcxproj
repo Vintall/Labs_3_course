@@ -78,6 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Vintall-NPC\Desktop\GraphicProjects_OpenGL_Shaders_GLSL\Lesson1\Task01Src\libs\GL_AL;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Vintall-NPC\Desktop\GraphicProjects_OpenGL_Shaders_GLSL\Lesson1\Task01Src\libs\GL_AL;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -116,13 +118,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GLFW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Git\Labs\5-sem\Graphics\Libs\glfw\include;D:\Git\Labs\5-sem\Graphics\Libs\glew-2.1.0\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Vintall-NPC\Desktop\openGL\glfw\glfw-3.3.4\include;C:\Users\Vintall-NPC\Desktop\openGL\glew\glew-2.1.0\include;C:\Users\Vintall-NPC\Desktop\Lab_2\GL_AL</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Git\Labs\5-sem\Graphics\Libs\glfw_Build\src\Debug;D:\Git\Labs\5-sem\Graphics\Libs\glew-2.1.0\lib\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Vintall-NPC\Desktop\openGL\glew\glew-2.1.0\lib\Debug\x64;C:\Users\Vintall-NPC\Desktop\openGL\glfw\glfw_build\debug;C:\Users\Vintall-NPC\Desktop\GraphicProjects_OpenGL_Shaders_GLSL\Lesson1\Task01Src\libs\GL_AL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;glfw3.lib;glew32sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

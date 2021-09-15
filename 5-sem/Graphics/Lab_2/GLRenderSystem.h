@@ -50,7 +50,7 @@ namespace Knight3D {
         };
 
         class GLRendererOld2_1 : public GLRenderSystem {
-
+        public:
             void init() {
                 if (!glfwInit()) {
                     fprintf(stderr, "Ошибка при инициализации GLFW\n");

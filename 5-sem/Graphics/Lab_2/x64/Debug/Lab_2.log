@@ -1,0 +1,6 @@
+﻿  Lab_2.cpp
+C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(65,90): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
+C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(65,59): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
+C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(65,33): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
+C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(70,1): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  Lab_2.vcxproj -> C:\Users\Vintall-NPC\Desktop\Lab_2\x64\Debug\Lab_2.exe

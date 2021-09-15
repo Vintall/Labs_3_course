@@ -18,19 +18,34 @@ namespace Knight3D {
 
     class GLWindow {
     public:
-        GLWindow(const std::string& title, uint32_t width, uint32_t height);
-        GLWindow(const std::string& title, uint32_t width, uint32_t height, GLFWwindow* share);
+        GLWindow(const std::string& title, uint32_t width, uint32_t height)
+        {
+            window = glfwCreateWindow(width, height, "sdf", NULL, NULL);
+            this->width = width;
+            this->height = height;
+        }
+        //GLWindow(const std::string& title, uint32_t width, uint32_t height, GLFWwindow* share);
 
         ~GLWindow() {
             glfwDestroyWindow(getGLFWHandle());
         };
-        uint32_t getWidth() const;
-        uint32_t getHeight() const;
+        uint32_t getWidth()
+        {
+            return width;
+        }
+        uint32_t getHeight()
+        {
+            return height;
+        }
 
-        GLFWwindow* getGLFWHandle() const;
+        GLFWwindow* getGLFWHandle()
+        {
+            return window;
+        }
     private:
-        // TODO
-
+        GLFWwindow* window;
+        uint32_t width, height;
+        
     };
 }
 #endif /* GLWINDOW_H */
