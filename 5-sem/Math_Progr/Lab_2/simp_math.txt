@@ -1,0 +1,25 @@
+; AND OR IMPLIES IFF NOT
+;1
+(IFF (AND Q W) (AND W Q))
+;2
+(IFF (AND Q (AND W E)) (AND (AND Q W) E))
+;3
+(IFF (OR Q (AND W E)) (AND (OR Q W) (OR Q E)))
+;4
+(IFF (NOT (AND Q W)) (OR (NOT Q) (NOT W)))
+;5
+(IFF (NOT (NOT Q)) Q)
+;6
+(IFF (OR (NOT A) A) TRUE)
+;7
+(IFF (AND Q (NOT Q)) FALSE)
+;8
+(IFF (IMPLIES Q W) (OR (NOT Q) W))
+;9
+(IFF (IFF Q W) (AND (IMPLIES Q W) (IMPLIES W Q)))
+;10
+(IFF (OR Q Q) Q)
+;11
+(IFF (AND Q Q) Q)
+;12
+(IFF Q Q)

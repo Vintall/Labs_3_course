@@ -1,123 +1,45 @@
-﻿//#include <GL/glew.h>
-//#include <GLFW/glfw3.h>
-#include <iostream>
-
+<<<<<<< HEAD
+﻿#include <iostream>
 
 #include <glew.h>
 #include <glfw3.h>
+#include "Vertices.h"
+=======
+﻿#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <iostream>
+>>>>>>> parent of 0a66888 (added lab_2)
 
 #include "GLWindow.h"
 #include "GLRenderSystem.h"
 
-namespace Cube {
-    float vertices[] = {
-        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
-        0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
-
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
-        -0.5f, 0.5f, 0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-
-        -0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, 0.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f
-    };
-
-    unsigned int VBO;
-
-    void init() {
-        {
-        }
-    }
-
-
-};
-
-namespace Squares {
-    GLfloat vertices[] = {
-        0, 0, 0,
-        1, 0, 0,
-        1, 1, 0,
-        0, 1, 0,
-
-        0, 0, 0,
-        0, 1, 0,
-        -1, 1, 0,
-        -1, 0, 0
-    };
-
-    GLfloat colors[] = {
-
-        255, 0, 0,
-        255, 0, 0,
-        255, 0, 0,
-        255, 0, 0,
-
-        0, 0, 255,
-        0, 0, 255,
-        0, 0, 255,
-        0, 0, 255
-    };
-
-
-
-}
-
 using namespace std;
-
-void resize(GLFWwindow* window, int width, int height) {
-    //printf("Width: " + width + "Height: " + height);
-
-    float ratio = width / (float)height;
-    glViewport(0, 0, width, height);
-    glClear(GL_COLOR_BUFFER_BIT);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glOrtho(-ratio, ratio, -1.f, 1.f, 1.f, -1.f);
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-}
 
 int main(int argc, char** argv) {
 
-    Knight3D::GraphCore::GLRendererOld2_1* renderer = new Knight3D::GraphCore::GLRendererOld2_1();
+<<<<<<< HEAD
+    Vintall::GraphCore::GLRenderer* renderer = new Vintall::GraphCore::GLRenderer();
+=======
+    Knight3D::GraphCore::GLRenderSystem* renderer = new Knight3D::GraphCore::GLRenderSystem();
 
+>>>>>>> parent of 0a66888 (added lab_2)
     renderer->init();
 
+    Vintall::GLWindow* Win1 = new Vintall::GLWindow("Lesson 021", 320, 240);
+    glfwMakeContextCurrent(Win1->getGLFWHandle());
 
+<<<<<<< HEAD
+    glewExperimental = true;
+    if (glewInit() != GLEW_OK)
+    {
+        fprintf(stderr, "Невозможно инициализировать GLEW\n");
+        return -1;
+    }
+    while (glfwGetKey(Win1->getGLFWHandle(), GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(Win1->getGLFWHandle()) == 0)
+    {
+=======
     Knight3D::GLWindow* Win1 = new Knight3D::GLWindow("Lesson 021", 320, 240);
-    //Knight3D::GLWindow* Win2 = new Knight3D::GLWindow("Lesson 022", 640, 480);
+    Knight3D::GLWindow* Win2 = new Knight3D::GLWindow("Lesson 022", 640, 480);
 
     Cube::init();
 
@@ -126,27 +48,29 @@ int main(int argc, char** argv) {
         glfwWindowShouldClose(Win1->getGLFWHandle()) == 0) {
 
 
+>>>>>>> parent of 0a66888 (added lab_2)
         glfwMakeContextCurrent(Win1->getGLFWHandle());
+
+<<<<<<< HEAD
         renderer->render(Win1->getGLFWHandle());
+=======
+
+        glfwMakeContextCurrent(Win2->getGLFWHandle());
+        renderer->render(Win2->getGLFWHandle());
         
-            glfwSwapBuffers(Win1->getGLFWHandle());
+            glfwSwapBuffers(Win2->getGLFWHandle());
+>>>>>>> parent of 0a66888 (added lab_2)
 
-
-        glfwMakeContextCurrent(Win1->getGLFWHandle());
-        renderer->render(Win1->getGLFWHandle());
-        
-            glfwSwapBuffers(Win1->getGLFWHandle());
-
-
-        glfwPollEvents();
         glfwMakeContextCurrent(Win1->getGLFWHandle());
     }
 
+<<<<<<< HEAD
+=======
 
-    //glDeleteBuffers(1, &Cube::VBO);
+    glDeleteBuffers(1, &Cube::VBO);
 
+>>>>>>> parent of 0a66888 (added lab_2)
     glfwDestroyWindow(Win1->getGLFWHandle());
     glfwTerminate();
-
     return 0;
 }

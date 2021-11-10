@@ -1,1 +1,2 @@
 C:\Users\Vintall-NPC\Desktop\Lab_2\x64\Debug\Lab_2.exe
+D:\Git\Labs\5-sem\Graphics\Lab_2\x64\Debug\Lab_2.exe

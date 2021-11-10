@@ -1,6 +1,9 @@
 ﻿  Lab_2.cpp
-C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(65,90): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
-C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(65,59): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
-C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(65,33): warning C4244: 'argument': conversion from 'double' to 'GLclampf', possible loss of data
-C:\Users\Vintall-NPC\Desktop\Lab_2\GLRenderSystem.h(70,1): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-  Lab_2.vcxproj -> C:\Users\Vintall-NPC\Desktop\Lab_2\x64\Debug\Lab_2.exe
+D:\Git\Labs\5-sem\Graphics\Lab_2\GLRenderSystem.h(40,90): warning C4244: аргумент: преобразование "double" в "GLclampf", возможна потеря данных
+D:\Git\Labs\5-sem\Graphics\Lab_2\GLRenderSystem.h(40,59): warning C4244: аргумент: преобразование "double" в "GLclampf", возможна потеря данных
+D:\Git\Labs\5-sem\Graphics\Lab_2\GLRenderSystem.h(40,33): warning C4244: аргумент: преобразование "double" в "GLclampf", возможна потеря данных
+D:\Git\Labs\5-sem\Graphics\Lab_2\GLRenderSystem.h(43,1): warning C4244: +=: преобразование "float" в "int", возможна потеря данных
+D:\Git\Labs\5-sem\Graphics\Lab_2\GLRenderSystem.h(43,69): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+D:\Git\Labs\5-sem\Graphics\Lab_2\GLRenderSystem.h(50,73): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+D:\Git\Labs\5-sem\Graphics\Lab_2\GLRenderSystem.h(50,46): warning C4244: аргумент: преобразование "double" в "GLfloat", возможна потеря данных
+  Lab_2.vcxproj -> D:\Git\Labs\5-sem\Graphics\Lab_2\x64\Debug\Lab_2.exe

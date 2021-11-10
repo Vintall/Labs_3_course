@@ -1,0 +1,43 @@
+body
+{
+    height:90%;
+    width:100%;
+	background-color:686527;
+}
+details 
+{
+  color: 77AAA6;
+  position:relative;
+  font-size:20px;
+}
+.cont
+{
+	text-align:center;
+	color: 77AAA6;
+	white-space: pre-wrap;
+	border: 1px dashed #634f36;
+    background: #565420;
+	
+    font-family: "Courier New", Courier, monospace;
+	
+    padding: 7px;
+    margin: 0 0 1em;
+}
+.menu
+{
+	text-align:center;
+	font-family: "Courier New", Courier, monospace;
+}
+.menu_item
+{
+	font-size:20px;
+	color:77AAA6;
+}
+.menu_item:hover
+{
+	color: 18D300;
+}
+.ali_center
+{
+	text-align:center;
+}

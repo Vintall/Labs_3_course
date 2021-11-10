@@ -1,0 +1,74 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<title>
+			Main
+		</title>
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="styles.css"/>
+	</head>
+</script> 
+<button class= "center_button" onclick="location.href='index.html'"> Вернуться в главное меню </button>
+<form class="form" action="http://localhost/Lab_2/php/Lab_2_PHP/form.php" method="post">
+  <ul>
+    <li>
+		<label for="name">Имя:</label>
+		<input type="text" id="name" name="user_name">
+    </li>
+    <li>
+		<label for="mail">Почта:</label>
+		<input type="email" id="mail" name="user_mail">
+    </li>
+    <li>
+		<label for="msg">Сообщение:</label>
+		<input type="textarea" id="msg" name="user_message">
+    </li>
+	<li>
+		<label for="checkbox">Поставь галочку:</label>
+		<input type="checkbox" id="checkbox" name="checkbox">
+    </li>
+	<li>
+	<label for="color">Какой цвет?:</label>
+		<input type="color" id="color" name="user_color">
+    </li>
+	<li>
+	<label for="date">Когда?:</label>
+		<input type="date" id="date" name="user_date">
+    </li>
+	<li>
+	<label for="number">Сколько?:</label>
+		<input type="number" id="number" name="user_number">
+    </li>
+	<li>
+	<label for="radio_div">Пол:</label>
+		<div id="radio_div">
+		<input type="radio" id="radio_yes" value = "1" name="user_radio">
+		<label for="radio_yes">Присутствует</label>
+		<br/>
+		<input type="radio" id="radio_no" value = "2" name="user_radio">
+		<label for="radio_ni">Отсутствует</label>
+		</div>
+    </li>
+	<li>
+	<label for="range">sqrt(841)=? (метки программой не предусмотрены)</label>
+		<input type="range" id="range" name="user_range" min="1" max="50">
+    </li>
+	<li>
+	<label for="week">Неделя:</label>
+		<input type="week" id="week" name="user_week">
+    </li>
+	<li>
+	<label for="tel">Телефон:</label>
+		<input type="tel" id="tel" name="user_tel">
+    </li>
+	<li>
+		<input type="reset">
+    </li>
+	<li class="button">
+		<button type="submit">Send your message</button>
+	</li>
+  </ul>
+</form>
+		
+
+	</body>
+</html>

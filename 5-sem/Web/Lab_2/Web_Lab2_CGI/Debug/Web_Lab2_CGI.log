@@ -1,0 +1,4 @@
+﻿  Web_Lab2_CGI.cpp
+D:\Git\Labs\5-sem\Web\Lab_2\Web_Lab2_CGI\getpost.h(38,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Git\Labs\5-sem\Web\Lab_2\Web_Lab2_CGI\getpost.h(66,27): error C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Git\Labs\5-sem\Web\Lab_2\Web_Lab2_CGI\getpost.h(101,20): error C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

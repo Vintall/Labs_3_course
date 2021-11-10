@@ -1,0 +1,33 @@
+body
+{
+    height:90%;
+    width:100%;
+	background-color:D4D664;
+}
+.ali_center
+{
+	text-align:center;
+}
+.form {
+  
+  margin: 0 auto;
+  width: 400px;
+  
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  display: block;
+}
+.center_button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  padding: 10px;
+  margin-below: 0px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

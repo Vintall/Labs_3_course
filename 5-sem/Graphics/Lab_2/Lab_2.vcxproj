@@ -78,8 +78,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Vintall-NPC\Desktop\GraphicProjects_OpenGL_Shaders_GLSL\Lesson1\Task01Src\libs\GL_AL;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Vintall-NPC\Desktop\GraphicProjects_OpenGL_Shaders_GLSL\Lesson1\Task01Src\libs\GL_AL;$(LibraryPath)</LibraryPath>
+<<<<<<< HEAD
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+=======
+>>>>>>> parent of 0a66888 (added lab_2)
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -116,15 +119,24 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>GLFW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>GLEW_STATIC;GLFW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Vintall-NPC\Desktop\openGL\glfw\glfw-3.3.4\include;C:\Users\Vintall-NPC\Desktop\openGL\glew\glew-2.1.0\include;C:\Users\Vintall-NPC\Desktop\Lab_2\GL_AL</AdditionalIncludeDirectories>
+<<<<<<< HEAD
+      <AdditionalIncludeDirectories>D:\Git\Labs\5-sem\Graphics\Libs\glfw\include;D:\Git\Labs\5-sem\Graphics\Libs\glew-2.1.0\include;C:\Users\Vintall\Desktop\GL_AL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>D:\Git\Labs\5-sem\Graphics\Libs\glfw\include;D:\Git\Labs\5-sem\Graphics\Libs\glew-2.1.0\include</AdditionalIncludeDirectories>
+>>>>>>> parent of 0a66888 (added lab_2)
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Vintall-NPC\Desktop\openGL\glew\glew-2.1.0\lib\Debug\x64;C:\Users\Vintall-NPC\Desktop\openGL\glfw\glfw_build\debug;C:\Users\Vintall-NPC\Desktop\GraphicProjects_OpenGL_Shaders_GLSL\Lesson1\Task01Src\libs\GL_AL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+<<<<<<< HEAD
+      <AdditionalLibraryDirectories>D:\Git\Labs\5-sem\Graphics\Libs\glew-2.1.0\lib\Debug\x64;D:\Git\Labs\5-sem\Graphics\Libs\glfw_Build\src\Debug;C:\Users\Vintall\Desktop\GL_AL</AdditionalLibraryDirectories>
       <AdditionalDependencies>glew32.lib;opengl32.lib;glfw3.lib;glew32sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+=======
+      <AdditionalLibraryDirectories>D:\Git\Labs\5-sem\Graphics\Libs\glfw_Build\src\Debug;D:\Git\Labs\5-sem\Graphics\Libs\glew-2.1.0\lib\Debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+>>>>>>> parent of 0a66888 (added lab_2)
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -149,6 +161,7 @@
   <ItemGroup>
     <ClInclude Include="GLRenderSystem.h" />
     <ClInclude Include="GLWindow.h" />
+    <ClInclude Include="Vertices.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

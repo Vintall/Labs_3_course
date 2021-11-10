@@ -15,34 +15,16 @@
 #define GLRENDERSYSTEM_H
 #define PI 3.14159265359
 
-namespace Knight3D {
+
+#include "Vertices.h"
+
+<<<<<<< HEAD
+namespace Vintall {
     namespace GraphCore {
-
-        class GLRenderSystem {
+        class GLRenderer
+        {
         public:
-
-            GLRenderSystem() { }
-            virtual void init() {
-            }
-
-            virtual void render(GLFWwindow* window) {
-            }
-
-            virtual void renderTriangleArray(GLfloat vertices[], GLfloat colors[]) {
-            }
-
-            virtual void renderVBO() {
-            }
-        };
-
-        class GLRender : public GLRenderSystem {
-
-            void init() {
-
-            }
-
-            void render(GLFWwindow* window) {
-
+=======
             }
 
             void renderTriangleArray(GLfloat vertices[], GLfloat colors[]) {
@@ -50,7 +32,8 @@ namespace Knight3D {
         };
 
         class GLRendererOld2_1 : public GLRenderSystem {
-        public:
+
+>>>>>>> parent of 0a66888 (added lab_2)
             void init() {
                 if (!glfwInit()) {
                     fprintf(stderr, "Ошибка при инициализации GLFW\n");
@@ -61,49 +44,42 @@ namespace Knight3D {
 
             }
             int colorRGB = 1;
-            void render(GLFWwindow* window) {
+            void render(GLFWwindow* window) 
+            {
+                glfwMakeContextCurrent(window);
+
                 glClearColor(sin(colorRGB * PI / 180), abs(cos(colorRGB * PI / 180)), abs(sin(colorRGB * PI / 180) + cos(colorRGB * PI / 180)), 1.0f);
-                glClear(GL_COLOR_BUFFER_BIT);
-
-
+                glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
                 {
-                    colorRGB <= 180 ? colorRGB += 0.1 : colorRGB = 0;
+                    colorRGB <= 180 ? colorRGB += 0.1f : colorRGB = 0.0f;
                 }
 
+                glEnable(GL_DEPTH_TEST);
+                glMatrixMode(GL_MODELVIEW);
+                glPushMatrix();
 
-                glLoadIdentity();
-                glRotatef((float)glfwGetTime() * 50.f, 0.f, 0.f, 1.f);
-                glBegin(GL_TRIANGLES);
-                glColor3f(1.f, 0.f, 0.f);
-                glVertex3f(-0.6f, -0.4f, 0.f);
-                glColor3f(0.f, 1.f, 0.f);
-                glVertex3f(0.6f, -0.4f, 0.f);
-                glColor3f(0.f, 0.f, 1.f);
-                glVertex3f(0.f, 0.6f, 0.f);
-                glEnd();
-            }
+                glRotatef(sin(glfwGetTime()) * 45.f, cos(glfwGetTime()) * 45.f, 45.f, 1.f);
+                glGenBuffers(1, &Cube::VAO);
+                glBindBuffer(GL_ARRAY_BUFFER, Cube::VAO);
+                glBufferData(GL_ARRAY_BUFFER, sizeof(Cube::vertices), Cube::vertices, GL_STATIC_DRAW);
 
-            void renderTriangleArray(GLfloat vertices[], GLfloat colors[]) {
+                glVertexPointer(3, GL_FLOAT, 0, NULL);
+                glBindBuffer(GL_ARRAY_BUFFER, Cube::VAO);
 
-                glClear(GL_COLOR_BUFFER_BIT);
-
-
+                glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+                glEnableVertexAttribArray(0);
                 glEnableClientState(GL_VERTEX_ARRAY);
-                glEnableClientState(GL_COLOR_ARRAY);
-
-                glVertexPointer(3, GL_FLOAT, 0, vertices);
-                glColorPointer(3, GL_FLOAT, 0, colors);
-
-                glDrawArrays(GL_QUADS, 0, 8);
-
-
-                glDisableClientState(GL_COLOR_ARRAY);
+                glDrawArrays(GL_TRIANGLES, 0, (sizeof(Cube::vertices) / sizeof(Cube::vertices[0]) / 5));
+                glPopMatrix();
                 glDisableClientState(GL_VERTEX_ARRAY);
+
+                glfwSwapBuffers(window);
+                glfwPollEvents();
             }
         };
     }
 }
 
 
-#endif /* GLRENDERSYSTEM_H */
+#endif
 
