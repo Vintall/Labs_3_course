@@ -1,0 +1,11 @@
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\bin\Debug\Lab_2.exe.config
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\bin\Debug\Lab_2.exe
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\bin\Debug\Lab_2.pdb
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.csproj.AssemblyReference.cache
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.csproj.SuggestedBindingRedirects.cache
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.Form1.resources
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.Properties.Resources.resources
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.csproj.GenerateResource.cache
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.csproj.CoreCompileInputs.cache
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.exe
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_2\Lab_2\obj\Debug\Lab_2.pdb

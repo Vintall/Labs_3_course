@@ -1,0 +1,130 @@
+X==A ---> R11
+X==B ---> R12
+X==C ---> R13
+Y==A ---> R21
+Y==B ---> R22
+Y==C ---> R23
+Z==A ---> R31
+Z==B ---> R32
+Z==C ---> R33
+((A >= B ∧ B >= C) v (A <= B ∧ B <= C)) ---> R0
+
+
+R11 v R12 v R13 ---> R111
+R21 v R22 v R23 ---> R222
+R31 v R32 v R33 ---> R333
+
+R = {
+
+        (R0 ∧ R111 ∧ R222 ∧ R333 ∧ "res = 3") v
+
+        (R0 ∧ (!R111 v !R222 v !R333) ∧ ((R111 ∧ R222 ∧ !R333) v (R111 ∧ !R222 ∧ R333) v (!R111 ∧ R222 ∧ R333)) ∧  "res = 2") v
+
+        (R0 ∧ (!R111 v !R222 v !R333) ∧ ((!R111 v !R222 v R333) ∧ (!R111 v R222 v !R333) ∧ (R111 v !R222 v !R333)) ∧ ((R111 ∧ !R222 ∧ !R333) v (!R111 ∧ !R222 ∧ R333) v (!R111 ∧ R222 ∧ !R333)) ∧  "res = 1") v
+		
+        (!R0 ∧ !R111 ∧ !R222 ∧ !R333 ∧ "res = 3") v
+
+        (!R0 ∧ (R111 v R222 v R333) ∧ ((!R111 ∧ !R222 ∧ R333) v (!R111 ∧ R222 ∧ !R333) v (R111 ∧ !R222 ∧ !R333)) ∧ "res = 2") v
+
+        (!R0 ∧ (R111 v R222 v R333) ∧ (R111 v R222 v !R333) ∧ (R111 v !R222 v R333) ∧ (!R111 v R222 v R333) ∧ ((!R111 ∧ R222 ∧ R333) v (R111 ∧ R222 ∧ !R333) v (R111 ∧ !R222 ∧ R333)) ∧ "res = 1") 
+		
+	}
+	
+	
+	(!R0 ∧ (P1 v P2 v P3) ∧ (P1 v P2 v !P3) ∧ (P1 v !P2 v P3) ∧ (!P1 v P2 v P3) ∧ ((!P1 ∧ P2 ∧ P3) v (P1 ∧ P2 ∧ !P3) v (P1 ∧ !P2 ∧ P3)))
+	
+	
+	(!R0 ∧ !P1 ∧ P2 ∧ P3 ∧ (P1 v P2) ∧ (P1 v P3) ∧ (P2 v P3) ) v
+	(!R0 ∧ P1 ∧ P2 ∧ !P3 ∧ (P1 v P2) ∧ (P1 v P3) ∧ (P2 v P3) ) v
+	(!R0 ∧ P1 ∧ !P2 ∧ P3 ∧ (P1 v P2) ∧ (P1 v P3) ∧ (P2 v P3) )
+	
+
+
+(R0 ∧ P1 ∧ P2 ∧ P3)
+V
+(R0 ∧ (!P1 v !P2 v !P3) ∧ ((P1 ∧ P2 ∧ !P3) v (P1 ∧ !P2 ∧ P3) v (!P1 ∧ P2 ∧ P3)))
+V
+(R0 ∧ (!P1 v !P2 v !P3) ∧ ((!P1 v !P2 v P3) ∧ (!P1 v P2 v !P3) ∧ (P1 v !P2 v !P3)) ∧ ((P1 ∧ !P2 ∧ !P3) v (!P1 ∧ !P2 ∧ P3) v (!P1 ∧ P2 ∧ !P3)))
+V
+(!R0 ∧ !P1 ∧ !P2 ∧ !P3)
+V
+(!R0 ∧ (P1 v P2 v P3) ∧ ((!P1 ∧ !P2 ∧ P3) v (!P1 ∧ P2 ∧ !P3) v (P1 ∧ !P2 ∧ !P3)))
+V
+(!R0 ∧ (P1 v P2 v P3) ∧ (P1 v P2 v !P3) ∧ (P1 v !P2 v P3) ∧ (!P1 v P2 v P3) ∧ ((!P1 ∧ P2 ∧ P3) v (P1 ∧ P2 ∧ !P3) v (P1 ∧ !P2 ∧ P3)))
+
+
+
+(R0 ∧ P1 ∧ P2 ∧ P3) v
+(!R0 ∧ !P1 ∧ !P2 ∧ !P3) v
+
+((P1 ∧ P2 ∧ !P3) ∧ R0 ∧ (!P1 v !P2 v !P3) ) v
+((P1 ∧ !P2 ∧ P3) ∧ R0 ∧ (!P1 v !P2 v !P3) ) v
+((!P1 ∧ P2 ∧ P3) ∧ R0 ∧ (!P1 v !P2 v !P3) ) v
+(!R0 ∧ (P1 v P2 v P3) ∧ !P1 ∧ !P2 ∧ P3) v
+(!R0 ∧ (P1 v P2 v P3) ∧ !P1 ∧ P2 ∧ !P3) v
+(!R0 ∧ (P1 v P2 v P3) ∧ P1 ∧ !P2 ∧ !P3) v
+
+( P1 ∧ !P2 ∧ !P3 ∧ R0 ∧ (!P1 v !P2) ∧ (!P1 v !P3) ∧ (!P2 v !P3) ) v
+( !P1 ∧ !P2 ∧ P3 ∧ R0 ∧ (!P1 v !P2) ∧ (!P1 v !P3) ∧ (!P2 v !P3) ) v
+( !P1 ∧ P2 ∧ !P3 ∧ R0 ∧ (!P1 v !P2) ∧ (!P1 v !P3) ∧ (!P2 v !P3) ) v
+(!R0 ∧ !P1 ∧ P2 ∧ P3 ∧ (P1 v P2) ∧ (P1 v P3) ∧ (P2 v P3) ) v
+(!R0 ∧ P1 ∧ P2 ∧ !P3 ∧ (P1 v P2) ∧ (P1 v P3) ∧ (P2 v P3) ) v
+(!R0 ∧ P1 ∧ !P2 ∧ P3 ∧ (P1 v P2) ∧ (P1 v P3) ∧ (P2 v P3) ) v
+
+
+
+
+(!R0 ∧ (P1 v P2 v P3) ∧ ((!P1 ∧ !P2 ∧ P3) v (!P1 ∧ P2 ∧ !P3) v (P1 ∧ !P2 ∧ !P3)))
+
+
+
+(R0 ∧ (!P1 v !P2) ∧ (!P1 v !P3) ∧ (!P2 v !P3) ∧ ((P1 ∧ !P2 ∧ !P3) v (!P1 ∧ !P2 ∧ P3) v (!P1 ∧ P2 ∧ !P3)))
+
+
+(R0 ∧ (!P1 v !P2 v !P3) ∧ ((P1 ∧ P2 ∧ !P3) v (P1 ∧ !P2 ∧ P3) v (!P1 ∧ P2 ∧ P3)))
+
+( !P3 ∧ R0 ) v
+( !P2 ∧ R0 ) v
+( !P1 ∧ R0 )
+
+((P1 ∧ P2 ∧ !P3) ∧ R0 ∧ (!P1 v !P2 v !P3) ) v
+((P1 ∧ !P2 ∧ P3) ∧ R0 ∧ (!P1 v !P2 v !P3) ) v
+((!P1 ∧ P2 ∧ P3) ∧ R0 ∧ (!P1 v !P2 v !P3) ) 
+
+
+
+
+
+(OR 
+(AND R0 R111 R222 R333)
+(AND R0 R111 R222 (NOT R333))
+(AND R0 R111 (NOT R222) R333)
+(AND R0 (NOT R111) R222 R333)
+(AND R0 (NOT R111) R222 (NOT R333))
+(AND R0 (NOT R111) (NOT R222) R333)
+(AND R0 R111 (NOT R222) (NOT R333))
+(AND R0 (NOT R111) (NOT R222) (NOT R333))
+(AND (NOT R0) (NOT R111) (NOT R222) (NOT R333))
+(AND (NOT R0) R111 (NOT R222) (NOT R333))
+(AND (NOT R0) (NOT R111) R222 (NOT R333))
+(AND (NOT R0) (NOT R111) (NOT R222) R333)
+(AND (NOT R0) R111 (NOT R222) R333)
+(AND (NOT R0) R111 R222 (NOT R333))
+(AND (NOT R0) (NOT R111) R222 R333)
+(AND (NOT R0) R111 R222 R333))
+(IMPLIES (AND R0 R111 R222 R333) (AND R0 R111 R222 R333))
+(IMPLIES (AND R0 R111 R222 (NOT R333)) (AND R0 R111 R222 (NOT R333)))
+(IMPLIES (AND R0 R111 (NOT R222) R333) (AND R0 R111 (NOT R222) R333))
+(IMPLIES (AND R0 (NOT R111) R222 R333) (AND R0 (NOT R111) R222 R333))
+(IMPLIES (AND R0 (NOT R111( R222 (NOT R333)) (AND R0 (NOT R111) R222 (NOT R333)))))
+(IMPLIES (AND R0 (NOT R111) (NOT R222) R333) (AND R0 (NOT R111) (NOT R222) R333))
+(IMPLIES (AND R0 R111 (NOT R222) (NOT R333)) (AND R0 R111 (NOT R222) (NOT R333)))
+(IMPLIES (AND R0 (NOT R111) (NOT R222) (NOT R333)) (AND R0 (NOT R111) (NOT R222) (NOT R333)))
+(IMPLIES (AND (NOT R0) (NOT R111) (NOT R222) (NOT R333)) (AND (NOT R0) (NOT R111) (NOT R222) (NOT R333)))
+(IMPLIES (AND (NOT R0) R111 (NOT R222) (NOT R333)) (AND (NOT R0) R111 (NOT R222) (NOT R333)))
+(IMPLIES (AND (NOT R0) (NOT R111) R222 (NOT R333)) (AND (NOT R0) (NOT R111) R222 (NOT R333)))
+(IMPLIES (AND (NOT R0) (NOT R111) (NOT R222) R333) (AND (NOT R0) (NOT R111) (NOT R222) R333))
+(IMPLIES (AND (NOT R0) R111 (NOT R222) R333) (AND (NOT R0) R111 (NOT R222) R333))
+(IMPLIES (AND (NOT R0) R111 R222 (NOT R333)) (AND (NOT R0) R111 R222 (NOT R333)))
+(IMPLIES (AND (NOT R0) (NOT R111) R222 R333) (AND (NOT R0) (NOT R111) R222 R333))
+(IMPLIES (AND (NOT R0) R111 R222 R333) (AND (NOT R0) R111 R222 R333)))

@@ -1,0 +1,11 @@
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\bin\Debug\net6.0\MyLib.deps.json
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\bin\Debug\net6.0\MyLib.dll
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\bin\Debug\net6.0\ref\MyLib.dll
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\bin\Debug\net6.0\MyLib.pdb
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\obj\Debug\net6.0\MyLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\obj\Debug\net6.0\MyLib.AssemblyInfoInputs.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\obj\Debug\net6.0\MyLib.AssemblyInfo.cs
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\obj\Debug\net6.0\MyLib.csproj.CoreCompileInputs.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\obj\Debug\net6.0\MyLib.dll
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\obj\Debug\net6.0\ref\MyLib.dll
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_3\MyLib\obj\Debug\net6.0\MyLib.pdb

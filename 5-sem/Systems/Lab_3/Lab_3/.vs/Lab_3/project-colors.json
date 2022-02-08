@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "afe395a1-e46b-4b47-8ad9-30e924642cbb": {
+      "ProjectGuid": "afe395a1-e46b-4b47-8ad9-30e924642cbb",
+      "DisplayName": "Lab_3",
+      "ColorIndex": 0
+    },
+    "d3aa7198-59d3-4218-a4e4-2063aeb4dfcb": {
+      "ProjectGuid": "d3aa7198-59d3-4218-a4e4-2063aeb4dfcb",
+      "DisplayName": "MyLib",
+      "ColorIndex": 1
+    },
+    "ffd5b4d1-6e7f-4540-862c-96d37bcd24d2": {
+      "ProjectGuid": "ffd5b4d1-6e7f-4540-862c-96d37bcd24d2",
+      "DisplayName": "Lab_3",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

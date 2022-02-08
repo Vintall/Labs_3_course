@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vertices.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="GLWindow.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -38,5 +35,13 @@
     <ClInclude Include="MyCamera.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BrightAndDim_FragmentShader.fs">
+      <Filter>Файлы заголовков</Filter>
+    </None>
+    <None Include="BrightAndDim_VertexShader.vs">
+      <Filter>Файлы заголовков</Filter>
+    </None>
   </ItemGroup>
 </Project>

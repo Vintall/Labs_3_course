@@ -1,0 +1,12 @@
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\bin\Debug\Lab_5.exe.config
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\bin\Debug\Lab_5.exe
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\bin\Debug\Lab_5.pdb
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.csproj.AssemblyReference.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.csproj.SuggestedBindingRedirects.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.Form1.resources
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.Properties.Resources.resources
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.csproj.GenerateResource.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.csproj.CoreCompileInputs.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.exe
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.pdb
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_5\Lab_5\obj\Debug\Lab_5.FormInfo.resources

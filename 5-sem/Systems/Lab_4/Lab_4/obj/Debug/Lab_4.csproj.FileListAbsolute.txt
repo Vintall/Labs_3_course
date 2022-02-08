@@ -1,0 +1,11 @@
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\bin\Debug\Lab_4.exe.config
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\bin\Debug\Lab_4.exe
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\bin\Debug\Lab_4.pdb
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.csproj.AssemblyReference.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.csproj.SuggestedBindingRedirects.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.Form1.resources
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.Properties.Resources.resources
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.csproj.GenerateResource.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.csproj.CoreCompileInputs.cache
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.exe
+D:\Git\Labs\Labs_3_course\5-sem\Systems\Lab_4\Lab_4\obj\Debug\Lab_4.pdb

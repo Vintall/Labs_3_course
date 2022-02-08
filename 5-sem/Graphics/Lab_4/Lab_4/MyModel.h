@@ -40,8 +40,6 @@ public:
     // draws the model, and thus all its meshes
     void Draw(Shader& shader)
     {
-        
-
         for (unsigned int i = 0; i < meshes.size(); i++)
             meshes[i].Draw(shader);
     }
@@ -209,8 +207,12 @@ private:
 
 unsigned int TextureFromFile(const char* path, const string& directory, bool gamma)
 {
+    //string filename = string(path);
     string filename = string(path);
     filename = directory + '/' + filename;
+    cout << endl <<"path  " << path << endl;
+    cout << endl << "directory  " << directory << endl;
+
 
     unsigned int textureID;
     glGenTextures(1, &textureID);
@@ -231,9 +233,9 @@ unsigned int TextureFromFile(const char* path, const string& directory, bool gam
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
 
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+        //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
         stbi_image_free(data);

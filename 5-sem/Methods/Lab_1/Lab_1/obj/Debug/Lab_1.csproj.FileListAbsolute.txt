@@ -1,0 +1,8 @@
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\bin\Debug\Lab_1.exe.config
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\bin\Debug\Lab_1.exe
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\bin\Debug\Lab_1.pdb
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\obj\Debug\Lab_1.csproj.AssemblyReference.cache
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\obj\Debug\Lab_1.csproj.SuggestedBindingRedirects.cache
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\obj\Debug\Lab_1.csproj.CoreCompileInputs.cache
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\obj\Debug\Lab_1.exe
+D:\Git\Labs\Labs_3_course\5-sem\Methods\Lab_1\Lab_1\obj\Debug\Lab_1.pdb
