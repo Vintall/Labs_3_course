@@ -1,0 +1,2 @@
+D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_3\Lab\x64\Debug\Lab.exe
+D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_4\Lab\x64\Debug\Lab.exe

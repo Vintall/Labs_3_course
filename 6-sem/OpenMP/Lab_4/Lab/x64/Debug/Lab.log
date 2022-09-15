@@ -1,0 +1,3 @@
+﻿  Lab.cpp
+D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_4\Lab\Lab.cpp(15,9): warning C4101: 'recv_rank': unreferenced local variable
+  Lab.vcxproj -> D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_4\Lab\x64\Debug\Lab.exe

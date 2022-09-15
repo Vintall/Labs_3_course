@@ -1,0 +1,3 @@
+﻿  Lab.cpp
+D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_5\Lab\Lab.cpp(32,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Lab.vcxproj -> D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_5\Lab\x64\Debug\Lab.exe

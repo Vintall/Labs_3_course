@@ -1,0 +1,4 @@
+I am process #0
+Just send vector of data (0(me) -> 1 process, 0 tag): 1234567895
+Just received one number (1 -> 0(me) process, 1 tag): 50
+Result is: 50

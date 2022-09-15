@@ -1,0 +1,9 @@
+My rank is: 0
+Running time is: 4120 milliseconds
+
+vec[0]: 8831
+vec[1]: 11992
+vec[2]: 9010
+vec[3]: 10247
+vec[4]: 11904
+vec[5]: 14504

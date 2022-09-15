@@ -1,0 +1,15 @@
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\bin\Debug\net6.0\Lab.exe
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\bin\Debug\net6.0\Lab.deps.json
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\bin\Debug\net6.0\Lab.runtimeconfig.json
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\bin\Debug\net6.0\Lab.dll
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\bin\Debug\net6.0\ref\Lab.dll
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\bin\Debug\net6.0\Lab.pdb
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.csproj.AssemblyReference.cache
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.AssemblyInfoInputs.cache
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.AssemblyInfo.cs
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.csproj.CoreCompileInputs.cache
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.dll
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\ref\Lab.dll
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.pdb
+D:\Git\Labs\Labs_3_course\6-sem\Optimisation\Lab_4\Lab\obj\Debug\net6.0\Lab.genruntimeconfig.cache

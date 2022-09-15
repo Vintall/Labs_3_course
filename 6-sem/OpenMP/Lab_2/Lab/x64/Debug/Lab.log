@@ -1,0 +1,5 @@
+﻿  Lab.cpp
+D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_2\Lab\Lab.cpp(59,31): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_2\Lab\Lab.cpp(113,31): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_2\Lab\Lab.cpp(135,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Lab.vcxproj -> D:\Git\Labs\Labs_3_course\6-sem\OpenMP\Lab_2\Lab\x64\Debug\Lab.exe
